@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="{% static 'img/favicon.ico' %}">
+
+	<title>Online Banking</title>
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&amp;subset=latin-ext" rel="stylesheet">
+
+	<!-- CSS - REQUIRED - START -->
+	<!-- Batch Icons -->
+	<link rel="stylesheet" href="{% static 'dashboards/batch-icons.css' %}">
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="{% static 'dashboards/bootstrap.min.css' %}">
+	<!-- Material Design Bootstrap -->
+	<link rel="stylesheet" href="{% static 'dashboards/mdb.min.css' %}">
+	<!-- Custom Scrollbar -->
+	<link rel="stylesheet" href="{% static 'dashboards/jquery.mCustomScrollbar.min.css' %}">
+	<!-- Hamburger Menu -->
+	<link rel="stylesheet" href="{% static 'dashboards/hamburgers.css' %}">
+
+	<!-- CSS - REQUIRED - END -->
+
+	<!-- CSS - OPTIONAL - START -->
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="{% static 'dashboards/font-awesome.min.css' %}">
+	<!-- JVMaps -->
+	<link rel="stylesheet" href="{% static 'dashboards/jqvmap.min.css' %}">
+	<!-- CSS - OPTIONAL - END -->
+
+	<!-- QuillPro Styles -->
+	<link rel="stylesheet" href="{% static 'dashboards/quillpro.css' %}">
+</head>
+
+<body>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="right-column sisu">
+				<div class="row mx-0">
+					<div class="col-md-7 order-md-2 signin-right-column px-5 bg-dark" data-qp-bg-image="bg-image-1.html">
+						<a class="signin-logo d-sm-block d-md-none" href="#">
+							<img src="{% static 'img/logo.png' %}" width="145" height="32.3" alt="QuillPro">
+						</a>
+						<h1 class="display-4">Sign In To get Started</h1>
+						<p class="lead mb-5">
+							Put your details to continue.
+						</p>
+					</div>
+					<div class="col-md-5 order-md-1 signin-left-column bg-white px-5">
+						<a class="signin-logo d-sm-none d-md-block" href="#">
+							<img src="{% static 'img/logo.png' %}" width="145" height="32.3" alt="QuillPro">
+						</a>
+						<form method="POST">
+							<div class="form-group">
+								<label for="exampleInputEmail1">Admin Username</label>
+								<input type="text" class="form-control" id="acctnumber"  placeholder="Username" name="user">
+							</div>
+							<div class="form-group">
+								<label for="exampleInputPassword1">Password</label>
+								<input type="password" class="form-control" id="passw" placeholder="Password" name="passw">
+							</div>
+							<div class="custom-control custom-checkbox mb-3">
+								<input type="checkbox" class="custom-control-input" id="keep-signed-in">
+								<label class="custom-control-label" for="keep-signed-in">Keep Me Signed In</label>
+							</div>
+							<button type="submit" class="btn btn-primary btn-gradient btn-block">
+								<i class="batch-icon batch-icon-key"></i>
+								Sign In
+							</button>
+							<hr>
+							<p class="text-center">
+							</p>
+					  </form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- SCRIPTS - REQUIRED START -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<!-- Bootstrap core JavaScript -->
+	<!-- JQuery -->
+	<script type="text/javascript" src="{% static 'dashboards/jquery-3.1.1.min.js' %}"></script>
+	<!-- Popper.js - Bootstrap tooltips -->
+	<script type="text/javascript" src="{% static 'dashboards/popper.min.js' %}"></script>
+	<!-- Bootstrap core JavaScript -->
+	<script type="text/javascript" src="{% static 'dashboards/bootstrap.min.js' %}"></script>
+	<!-- MDB core JavaScript -->
+	<script type="text/javascript" src="{% static 'dashboards/mdb.min.js' %}"></script>
+	<!-- Velocity -->
+	<script type="text/javascript" src="{% static 'dashboards/velocity.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'dashboards/velocity.ui.min.js' %}"></script>
+	<!-- Custom Scrollbar -->
+	<script type="text/javascript" src="{% static 'dashboards/jquery.mCustomScrollbar.concat.min.js' %}"></script>
+	<!-- jQuery Visible -->
+	<script type="text/javascript" src="{% static 'dashboards/jquery.visible.min.js' %}"></script>
+	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<script type="text/javascript" src="{% static 'dashboards/ie10-viewport-bug-workaround.js' %}"></script>
+
+	<!-- SCRIPTS - REQUIRED END -->
+
+	<!-- ChartJS -->
+	<script type="text/javascript" src="{% static 'dashboards/chart.bundle.min.js' %}"></script>
+	<!-- JVMaps -->
+	<script type="text/javascript" src="{% static 'dashboards/jquery.vmap.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'dashboards/jquery.vmap.usa.js' %}"></script>
+
+	<!-- SCRIPTS - OPTIONAL START -->
+	<!-- Image Placeholder -->
+	<script type="text/javascript" src="{% static 'dashboards/holder.min.js' %}"></script>
+	<!-- SCRIPTS - OPTIONAL END -->
+
+	<!-- QuillPro Scripts -->
+	<script type="text/javascript" src="{% static 'dashboards/scripts.js' %}"></script>
+		<script type="text/javascript" src="{% static 'dashboards/jquery.form-validator.min.js' %}"></script>
+			<script type="text/javascript" src="{% static 'dashboards/forms-validation.js' %}"></script>
+	<!-- Remember to include jQuery :) -->
+
+</body>
+
+</html>
